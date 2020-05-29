@@ -27,6 +27,8 @@ function setup(){
         var divTodo = document.createElement("div");
         var buttonTodo = document.createElement("button");
         var pTodo = document.createElement("p");
+
+        buttonTodo.setAttribute("onclick", "deleteItem("+ i +")");
         
         pTodo.innerHTML = lista.content[i];
         buttonTodo.innerHTML = "Deletar ToDo";
